@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="domain.ShowTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-03-19T20:24:42" hostname="DESKTOP-NA7JB45" time="0.005">
+  <properties/>
+  <testcase name="getAvailable" classname="domain.ShowTest" time="0.001"/>
+  <testcase name="setLocation" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="getLocation" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="getDate" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="getSold" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="getID" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="setID" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="setAvailable" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="setDate" classname="domain.ShowTest" time="0.0"/>
+  <testcase name="setSold" classname="domain.ShowTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,3 @@
+jdbc.url=jdbc:sqlite:F:\\FACULTATE\\Anul 2\\Semestrul 2\\MPP\\baze_de_date\\MusicFest.db
+mjdbc.user=root
+mjdbc.pass=ily

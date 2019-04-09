@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AfterLoginController">
+   <children>
+      <TableView fx:id="artistsTableView" layoutX="50.0" layoutY="67.0" prefHeight="204.0" prefWidth="752.0">
+        <columns>
+          <TableColumn fx:id="artistColumnMain" prefWidth="115.20001220703125" text="Name" />
+          <TableColumn fx:id="dateColumnMain" prefWidth="101.5999755859375" text="Date" />
+            <TableColumn fx:id="locationColumnMain" prefWidth="120.7999267578125" text="Location" />
+            <TableColumn fx:id="availableColumnMain" prefWidth="132.00006103515625" text="Available Tickets" />
+            <TableColumn fx:id="soldColumnMain" minWidth="0.0" prefWidth="90.39990234375" text="Sold Tickets" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="searchDP" layoutX="20.0" layoutY="344.0" onAction="#search" />
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="852.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Logout" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="20.0" layoutY="42.0" text="All shows:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="312.0" text="Search by date:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="searchArtistsTableView" layoutX="200.0" layoutY="312.0" prefHeight="105.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="artistColumn" prefWidth="106.39994812011719" text="Name" />
+          <TableColumn fx:id="locationColumn" prefWidth="96.0" text="Location" />
+            <TableColumn fx:id="hourColumn" prefWidth="54.39996337890625" text="Hour" />
+            <TableColumn fx:id="availableColumn" minWidth="0.0" prefWidth="120.79998779296875" text="Available Tickets" />
+        </columns>
+      </TableView>
+      <Label layoutX="602.0" layoutY="332.0" text="Purchaser:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="602.0" layoutY="383.0" text="Tickets:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="602.0" layoutY="437.0" mnemonicParsing="false" onAction="#buy" prefHeight="25.0" prefWidth="72.0" text="BUY" />
+      <TextField fx:id="purchaserText" layoutX="689.0" layoutY="332.0" />
+      <TextField fx:id="ticketsText" layoutX="689.0" layoutY="383.0" />
+      <Button fx:id="logoutButton" layoutX="737.0" layoutY="437.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="72.0" text="LOGOUT" />
+   </children>
+</Pane>
