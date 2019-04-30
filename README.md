@@ -1,5 +1,5 @@
 # uni_repo
-Projects among the years of my university.
+An application in java that administrates the sales of the tickets of a Music Fest.
 
 APPLICATION: lab3mpp 
 Problema 2.
